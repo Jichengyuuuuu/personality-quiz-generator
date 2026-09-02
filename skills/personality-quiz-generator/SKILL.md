@@ -1,15 +1,17 @@
 ---
 name: personality-quiz-generator
-description: Generate personality quizzes, role-matching tests, result-based interactive games, and playable quiz webpages from a topic, prompt, document, webpage, dataset, character library, or other context. Use when users ask to 生成性格测试、人格测试、趣味测试、角色匹配测试、答题小游戏、测试类 H5/网页, or need questions, result archetypes, deterministic scoring, quiz JSON, result cards, or a runnable interactive experience. Keep the scope to experiences whose choices produce a personality, role, character, or type result; do not use for generic games or clinical assessment.
+description: Generate personality quizzes, role-matching tests, entertainment divination quizzes, intuition or projection tests, result-based interactive games, and playable quiz webpages from a topic, prompt, document, webpage, dataset, character library, or other context. Use when users ask to 生成性格测试、人格测试、趣味测试、趣味占卜、占卜测试、心理投射测试、直觉选择测试、角色匹配测试、答题小游戏、测试类 H5/网页, or need questions, symbolic readings, result archetypes, deterministic scoring, quiz JSON, result cards, or a runnable interactive experience. Keep the scope to experiences whose choices produce a personality, role, character, symbolic reflection, or type result; do not use for generic games, clinical assessment, or factual supernatural prediction.
 ---
 
 # Personality Quiz Generator
 
-Turn limited context into a reusable quiz core, then deliver it as questions, a playable conversation, an implementation package, a result-based game, or a runnable webpage. Keep scoring deterministic and results enjoyable to claim.
+Turn limited context into a reusable quiz core, then deliver it as questions, a playable conversation, an implementation package, a result-based game, or a runnable webpage. Keep scoring deterministic and results enjoyable to claim. Frame divination-style themes as entertainment and reflection rather than factual prediction.
 
 ## Load only the needed resources
 
 Always read [references/quiz-design-guide.md](references/quiz-design-guide.md).
+
+Read [references/entertainment-divination-guide.md](references/entertainment-divination-guide.md) for 趣味占卜, fortune-themed, oracle-style, intuition-choice, or psychological-projection quizzes.
 
 Read [references/quiz-spec-schema.md](references/quiz-spec-schema.md) when producing JSON, files, code, a game, a webpage, or scoring validation.
 
@@ -43,13 +45,13 @@ Infer one target without asking when the user's wording is clear:
 - **Interactive game**: Select a fitting mechanic, keep every scored action mapped to a stable quiz option ID, and create the requested playable artifact when the user asks to build rather than only design it.
 - **Interactive webpage**: Create a runnable responsive experience, not only a concept or code excerpt. Use an available site/app builder when explicitly requested; otherwise adapt the bundled portable template.
 
-Do not expand into a generic game or website builder. If choices do not produce a personality, role, character, or type result, use a more appropriate skill.
+Do not expand into a generic game or website builder. If choices do not produce a personality, role, character, symbolic reflection, or type result, use a more appropriate skill.
 
 ## Build the reusable quiz core
 
 ### 1. Understand the theme
 
-Read supplied context with the relevant read-only tool. Extract the participant's reason for taking the quiz, intended social setting, source-defined entities and constraints, emotional tone, and claims that must not be invented. Keep source facts, assumptions, and creative proposals distinct. If linked content is inaccessible, request the relevant text.
+Read supplied context with the relevant read-only tool. Extract the participant's reason for taking the quiz, intended social setting, source-defined entities and constraints, emotional tone, and claims that must not be invented. Keep source facts, assumptions, and creative proposals distinct. If linked content is inaccessible, request the relevant text. For a divination-style theme, identify the reflective lens—current energy, opportunity, relationship pattern, inner need, or next-step reminder—without promising that the result predicts external events.
 
 ### 2. Write one concrete promise
 
@@ -156,4 +158,4 @@ Treat validator warnings as review prompts, not permission to ignore weak design
 
 ## Respect the boundary
 
-Use generated quizzes for entertainment, reflection, education, or product engagement. Do not claim clinical validity, diagnose conditions, or recommend an unvalidated quiz for hiring, medical, legal, financial, or other high-stakes decisions. Do not collect personal answers or analytics without explicit user intent and visible disclosure.
+Use generated quizzes for entertainment, reflection, education, or product engagement. Treat fortune- and divination-themed output as symbolic entertainment: use possibility language, disclose that it is not factual prediction, and never introduce curses, threats, guaranteed outcomes, or certainty about health, pregnancy, death, money, legal matters, or major life decisions. Do not claim clinical validity, diagnose conditions, or recommend an unvalidated quiz for hiring, medical, legal, financial, or other high-stakes decisions. Do not collect personal answers or analytics without explicit user intent and visible disclosure.
