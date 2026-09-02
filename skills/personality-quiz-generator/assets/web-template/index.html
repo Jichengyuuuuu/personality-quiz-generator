@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="一个轻量、可分享的互动性格测试。" />
+    <title>互动性格测试</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell" id="app">
+      <section class="card status-card" id="loading-screen" aria-live="polite">
+        <p class="eyebrow">QUIZ LOADING</p>
+        <h1>正在布置测试现场……</h1>
+      </section>
+
+      <section class="card intro" id="intro-screen" hidden>
+        <p class="eyebrow" id="intro-eyebrow"></p>
+        <h1 id="quiz-title"></h1>
+        <p class="lede" id="quiz-promise"></p>
+        <p class="meta" id="quiz-meta"></p>
+        <button class="primary" id="start-button" type="button"></button>
+        <p class="disclaimer" id="quiz-disclaimer"></p>
+      </section>
+
+      <section class="card question" id="question-screen" hidden>
+        <div class="progress-row">
+          <button class="back" id="back-button" type="button">← 上一题</button>
+          <span id="progress-label"></span>
+        </div>
+        <div class="progress-track" aria-hidden="true"><span id="progress-bar"></span></div>
+        <p class="eyebrow" id="question-kicker"></p>
+        <h2 id="question-text" tabindex="-1"></h2>
+        <div class="options" id="option-list" role="group" aria-labelledby="question-text"></div>
+        <button class="primary next" id="next-button" type="button" hidden>下一题</button>
+      </section>
+
+      <section class="card status-card" id="calculating-screen" aria-live="polite" hidden>
+        <p class="eyebrow">RESULT IN PROGRESS</p>
+        <h2 id="calculating-message"></h2>
+        <div class="dots" aria-hidden="true"><span></span><span></span><span></span></div>
+      </section>
+
+      <section class="card result" id="result-screen" hidden>
+        <p class="eyebrow">YOUR RESULT</p>
+        <div class="result-symbol" id="result-symbol" aria-hidden="true"></div>
+        <h1 id="result-name"></h1>
+        <p class="result-hook" id="result-hook"></p>
+        <p id="result-description"></p>
+        <div class="result-grid">
+          <div><h3>你的优势</h3><ul id="strength-list"></ul></div>
+          <div><h3>容易卡住的地方</h3><ul id="tradeoff-list"></ul></div>
+        </div>
+        <div id="secondary-result" class="secondary" hidden></div>
+        <div id="dimension-panel" class="dimensions"></div>
+        <blockquote id="share-line"></blockquote>
+        <div class="actions">
+          <button class="primary" id="share-button" type="button">分享结果</button>
+          <button class="secondary-button" id="restart-button" type="button">重新测试</button>
+        </div>
+        <p class="copy-status" id="copy-status" aria-live="polite"></p>
+      </section>
+
+      <section class="card status-card error" id="error-screen" role="alert" hidden>
+        <p class="eyebrow">SOMETHING WENT WRONG</p>
+        <h2>测试暂时没有加载成功</h2>
+        <p id="error-message"></p>
+        <button class="secondary-button" type="button" onclick="window.location.reload()">重新加载</button>
+      </section>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

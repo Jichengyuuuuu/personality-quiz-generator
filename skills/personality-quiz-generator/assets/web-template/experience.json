@@ -1,0 +1,55 @@
+{
+  "experience_schema_version": "1.0",
+  "id": "office-animals-demo-web",
+  "quiz_ref": "./quiz.json",
+  "delivery": "web",
+  "mechanic": "linear-cards",
+  "flow": ["intro", "questions", "calculating", "result"],
+  "screens": {
+    "intro": {
+      "eyebrow": "2 分钟办公室生态测试",
+      "start_label": "进入办公室动物园",
+      "disclaimer": "结果仅供娱乐与自我观察，不用于招聘评价。"
+    },
+    "questions": {
+      "show_progress": true,
+      "allow_back": true
+    },
+    "calculating": {
+      "duration_ms": 700,
+      "messages": ["正在观察你的工位生态……"]
+    },
+    "result": {
+      "show_secondary": true,
+      "show_dimensions": true,
+      "actions": ["share", "restart"]
+    }
+  },
+  "theme": {
+    "tone": "playful",
+    "visual_direction": "editorial office badge",
+    "background_color": "#F4F0E8",
+    "text_color": "#1D1D1F",
+    "accent_color": "#FF6B35"
+  },
+  "interaction": {
+    "transition": "slide",
+    "shuffle_questions": false,
+    "shuffle_options": false,
+    "auto_advance": true
+  },
+  "share": {
+    "title_template": "我的办公室动物是：{result_name}",
+    "text_template": "{share_line}",
+    "prompt": "你觉得我像吗？"
+  },
+  "data": {
+    "answer_persistence": "none",
+    "analytics": false
+  },
+  "accessibility": {
+    "keyboard_navigation": true,
+    "reduced_motion": true,
+    "minimum_contrast": "WCAG-AA"
+  }
+}

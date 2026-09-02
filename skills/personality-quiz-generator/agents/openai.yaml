@@ -1,0 +1,4 @@
+interface:
+  display_name: "性格测试与互动体验生成器"
+  short_description: "根据主题生成可计分的性格测试、互动游戏与可运行网页"
+  default_prompt: "Use $personality-quiz-generator to turn my topic into a complete personality quiz, interactive game, or playable webpage."
