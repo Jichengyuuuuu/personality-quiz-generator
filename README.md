@@ -127,17 +127,6 @@ python3 skills/personality-quiz-generator/scripts/score_quiz.py quiz.json answer
 
 The validators check structure, duration fit, repeated dimension coverage, dominant questions, result separation, deterministic tie-breaks, and result reachability.
 
-## Run the included web template
-
-```bash
-cd skills/personality-quiz-generator/assets/web-template
-python3 -m http.server 8000
-```
-
-Open `http://localhost:8000`, then replace the sample `quiz.json` and `experience.json` with generated configurations.
-
-The template includes mobile-first layouts, keyboard navigation, reduced-motion support, in-memory answers, Web Share API support, clipboard fallback, result dimensions, secondary results, and restart behavior.
-
 ## Repository structure
 
 ```text
