@@ -123,17 +123,6 @@ python3 skills/personality-quiz-generator/scripts/score_quiz.py quiz.json answer
 
 校验器会检查题量与时长、维度覆盖、单题权重、结果区分度、确定性平局规则和结果可达性。
 
-## 运行网页模板
-
-```bash
-cd skills/personality-quiz-generator/assets/web-template
-python3 -m http.server 8000
-```
-
-打开 `http://localhost:8000`，再用生成的 `quiz.json` 和 `experience.json` 替换示例配置。
-
-模板已经包含移动端布局、键盘操作、减少动态效果、结果维度、隐藏副人格、系统分享、复制兜底和重新测试。用户答案默认只保留在当前页面内存中。
-
 ## 使用边界
 
 本项目适用于娱乐、自我观察、教育、社群互动和产品活动，不宣称具备临床效度，也不应作为未经验证的招聘、医疗、法律或金融决策工具。
