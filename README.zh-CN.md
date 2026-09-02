@@ -8,6 +8,31 @@
 
 [English](./README.md)
 
+## 看一眼就知道它能生成什么
+
+<table>
+  <tr>
+    <td width="50%">
+      <img src="./assets/showcase/ai-ex-replica-quiz.jpg" alt="AI 复制前任的剧情关系测试移动端 App" width="100%">
+      <br><strong>AI 复制了你的前任，你会重新爱上它吗？</strong><br>剧情关系测试 · 移动端 App
+    </td>
+    <td width="50%">
+      <img src="./assets/showcase/conflict-instinct-quiz.jpg" alt="面对冲突本能的抽象人格测试网站" width="100%">
+      <br><strong>你面对冲突的本能是什么？</strong><br>抽象人格测试 · 响应式网站
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img src="./assets/showcase/pressure-animal-quiz.jpg" alt="压力之下会变成哪种动物的趣味人格测试 App" width="100%">
+      <br><strong>压力之下，你会变成哪种动物？</strong><br>趣味原型测试 · 插画移动端 App
+    </td>
+    <td width="50%">
+      <img src="./assets/showcase/travel-city-match-quiz.jpg" alt="测试最适合旅居城市的生活方式匹配网站" width="100%">
+      <br><strong>测试最适合你旅居的城市</strong><br>生活方式匹配 · 网页与移动端
+    </td>
+  </tr>
+</table>
+
 ## 它能生成什么
 
 - 有传播感、适合截图分享的趣味性格测试
