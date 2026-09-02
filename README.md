@@ -2,7 +2,7 @@
 
 > Turn one idea into a personality quiz people actually want to finish — and share.
 
-**Personality Quiz Generator** is an AI agent skill for creating engaging personality tests, role-matching quizzes, result-based games, and playable quiz websites from a topic, document, webpage, dataset, or character library.
+**Personality Quiz Generator** is an AI agent skill for creating engaging personality tests, entertainment divination quizzes, intuition-based projection tests, role-matching quizzes, result-based games, and playable quiz websites from a topic, document, webpage, dataset, or character library.
 
 It designs the result system first, writes balanced scenario questions, calculates every outcome with deterministic scoring, and can deliver anything from a question set to a complete interactive web experience.
 
@@ -13,6 +13,7 @@ It designs the result system first, writes balanced scenario questions, calculat
 - Viral-style personality quizzes with memorable, shareable results
 - Behavior-based personality test questions and balanced answer options
 - Character, career, team-role, fandom, and archetype matching tests
+- Entertainment divination, oracle-style, and intuition-choice quizzes with responsible framing
 - Result-based interactive games and narrative quiz journeys
 - Implementation-ready `quiz.json` and `experience.json` files
 - Responsive, accessible, zero-dependency quiz websites
@@ -28,6 +29,7 @@ Most AI quiz generators stop at a list of generic questions. This skill creates 
 - **Built for sharing** — every result includes a hook, tension, share line, and visual identity.
 - **Format-agnostic** — one quiz core can power a document, chat, game, H5 experience, or website.
 - **Agent-ready** — schemas, validators, scoring runtimes, and a portable web template are included.
+- **Responsible mystical framing** — divination-style results remain symbolic, reflective, and clearly non-predictive.
 
 ## Example
 
@@ -72,6 +74,10 @@ $personality-quiz-generator Turn this character bible into a role-matching game 
 
 ```text
 $personality-quiz-generator Build a playable mobile-first personality quiz webpage from this topic.
+```
+
+```text
+$personality-quiz-generator Create an entertainment divination quiz about “Which kind of luck are you ready to notice?”
 ```
 
 If duration is missing, the skill offers three choices:
@@ -136,6 +142,7 @@ skills/personality-quiz-generator/
 ├── assets/web-template/
 ├── references/
 │   ├── quiz-design-guide.md
+│   ├── entertainment-divination-guide.md
 │   ├── quiz-spec-schema.md
 │   ├── experience-spec-schema.md
 │   ├── gameplay-patterns.md
@@ -148,10 +155,10 @@ skills/personality-quiz-generator/
 
 ## Scope and safety
 
-This project is designed for entertainment, reflection, education, community engagement, and product experiences. It does not claim clinical validity and should not be used as an unvalidated hiring, medical, legal, or financial assessment.
+This project is designed for entertainment, reflection, education, community engagement, and product experiences. Divination-style outputs are symbolic entertainment, not factual supernatural predictions. The project does not claim clinical validity and should not be used as an unvalidated hiring, medical, legal, or financial assessment.
 
 Answers remain local by default. Analytics, persistence, and remote collection must be explicitly requested and visibly disclosed.
 
 ---
 
-**Keywords:** AI personality quiz generator, personality test generator, interactive quiz builder, viral quiz maker, role matching quiz, character quiz generator, result-based game, quiz website template, deterministic scoring, agent skill, Codex skill.
+**Keywords:** AI personality quiz generator, personality test generator, entertainment divination quiz, fortune quiz generator, oracle-style quiz, psychological projection test, intuition quiz, interactive quiz builder, viral quiz maker, role matching quiz, character quiz generator, result-based game, quiz website template, deterministic scoring, agent skill, Codex skill.
